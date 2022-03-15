@@ -22,6 +22,8 @@ func generators(cmd string) ([]Genfunc, error) {
 	switch cmd {
 	case "gen":
 		return []Genfunc{Service, Transport, OpenAPI}, nil
+	case "doc":
+		return []Genfunc{OpenAPI}, nil
 	case "example":
 		return []Genfunc{Example}, nil
 	default:
